@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3873F4F91F19272A00EC746A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873F4F81F19272A00EC746A /* AppDelegate.swift */; };
+		3873F4FB1F19272A00EC746A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873F4FA1F19272A00EC746A /* ViewController.swift */; };
+		3873F5001F19272A00EC746A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3873F4FF1F19272A00EC746A /* Assets.xcassets */; };
+		3873F5031F19272A00EC746A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5011F19272A00EC746A /* LaunchScreen.storyboard */; };
+		3873F51C1F19276200EC746A /* baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F50B1F19276100EC746A /* baby.jpg */; };
+		3873F51D1F19276200EC746A /* bread.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F50C1F19276100EC746A /* bread.jpg */; };
+		3873F51E1F19276200EC746A /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F50D1F19276100EC746A /* cat.jpg */; };
+		3873F51F1F19276200EC746A /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F50E1F19276100EC746A /* coffee.jpg */; };
+		3873F5201F19276200EC746A /* cupcakes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F50F1F19276200EC746A /* cupcakes.jpg */; };
+		3873F5211F19276200EC746A /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5101F19276200EC746A /* dog.jpg */; };
+		3873F5221F19276200EC746A /* flowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5111F19276200EC746A /* flowers.jpg */; };
+		3873F5231F19276200EC746A /* frog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5121F19276200EC746A /* frog.jpg */; };
+		3873F5241F19276200EC746A /* frogs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5131F19276200EC746A /* frogs.jpg */; };
+		3873F5251F19276200EC746A /* milk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5141F19276200EC746A /* milk.jpg */; };
+		3873F5261F19276200EC746A /* people.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5151F19276200EC746A /* people.jpg */; };
+		3873F5271F19276200EC746A /* raspberries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5161F19276200EC746A /* raspberries.jpg */; };
+		3873F5281F19276200EC746A /* spider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5171F19276200EC746A /* spider.jpg */; };
+		3873F5291F19276200EC746A /* surfer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5181F19276200EC746A /* surfer.jpg */; };
+		3873F52A1F19276200EC746A /* tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5191F19276200EC746A /* tree.jpg */; };
+		3873F52B1F19276200EC746A /* turtle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F51A1F19276200EC746A /* turtle.jpg */; };
+		3873F52C1F19276200EC746A /* waves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3873F51B1F19276200EC746A /* waves.jpg */; };
+		3873F5311F19278D00EC746A /* EmotionRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3873F5301F19278D00EC746A /* EmotionRecognizer.mm */; };
+		3873F5331F1927D900EC746A /* EmotionRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873F5321F1927D900EC746A /* EmotionRecognition.swift */; };
+		3873F5351F1927DF00EC746A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873F5341F1927DF00EC746A /* Stack.swift */; };
+		3873F5371F1927E600EC746A /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873F5361F1927E600EC746A /* FrameExtractor.swift */; };
+		3873F5391F1927EC00EC746A /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3873F5381F1927EC00EC746A /* Stopwatch.swift */; };
+		3873F53C1F19399000EC746A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3873F53B1F19399000EC746A /* opencv2.framework */; };
+		3873F53F1F193A4500EC746A /* fishface_ckplus.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3873F53E1F193A4500EC746A /* fishface_ckplus.xml */; };
+		3873F5411F193A4C00EC746A /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5401F193A4C00EC746A /* haarcascade_frontalface_default.xml */; };
+		3873F5431F1941F900EC746A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3873F5421F1941F900EC746A /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3873F4F51F19272A00EC746A /* SlideshowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3873F4F81F19272A00EC746A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3873F4FA1F19272A00EC746A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3873F4FF1F19272A00EC746A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3873F5021F19272A00EC746A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3873F5041F19272A00EC746A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3873F50B1F19276100EC746A /* baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby.jpg; sourceTree = "<group>"; };
+		3873F50C1F19276100EC746A /* bread.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bread.jpg; sourceTree = "<group>"; };
+		3873F50D1F19276100EC746A /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		3873F50E1F19276100EC746A /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
+		3873F50F1F19276200EC746A /* cupcakes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cupcakes.jpg; sourceTree = "<group>"; };
+		3873F5101F19276200EC746A /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		3873F5111F19276200EC746A /* flowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flowers.jpg; sourceTree = "<group>"; };
+		3873F5121F19276200EC746A /* frog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frog.jpg; sourceTree = "<group>"; };
+		3873F5131F19276200EC746A /* frogs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frogs.jpg; sourceTree = "<group>"; };
+		3873F5141F19276200EC746A /* milk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milk.jpg; sourceTree = "<group>"; };
+		3873F5151F19276200EC746A /* people.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = people.jpg; sourceTree = "<group>"; };
+		3873F5161F19276200EC746A /* raspberries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raspberries.jpg; sourceTree = "<group>"; };
+		3873F5171F19276200EC746A /* spider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider.jpg; sourceTree = "<group>"; };
+		3873F5181F19276200EC746A /* surfer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = surfer.jpg; sourceTree = "<group>"; };
+		3873F5191F19276200EC746A /* tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tree.jpg; sourceTree = "<group>"; };
+		3873F51A1F19276200EC746A /* turtle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtle.jpg; sourceTree = "<group>"; };
+		3873F51B1F19276200EC746A /* waves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waves.jpg; sourceTree = "<group>"; };
+		3873F52E1F19278D00EC746A /* SlideshowDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideshowDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		3873F52F1F19278D00EC746A /* EmotionRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmotionRecognizer.h; sourceTree = "<group>"; };
+		3873F5301F19278D00EC746A /* EmotionRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EmotionRecognizer.mm; sourceTree = "<group>"; };
+		3873F5321F1927D900EC746A /* EmotionRecognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionRecognition.swift; sourceTree = "<group>"; };
+		3873F5341F1927DF00EC746A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		3873F5361F1927E600EC746A /* FrameExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		3873F5381F1927EC00EC746A /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		3873F53B1F19399000EC746A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3873F53E1F193A4500EC746A /* fishface_ckplus.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fishface_ckplus.xml; sourceTree = "<group>"; };
+		3873F5401F193A4C00EC746A /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		3873F5421F1941F900EC746A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3873F4F21F19272A00EC746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3873F53C1F19399000EC746A /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3873F4EC1F19272A00EC746A = {
+			isa = PBXGroup;
+			children = (
+				3873F4F71F19272A00EC746A /* SlideshowDemo */,
+				3873F4F61F19272A00EC746A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3873F4F61F19272A00EC746A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3873F4F51F19272A00EC746A /* SlideshowDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3873F4F71F19272A00EC746A /* SlideshowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3873F5421F1941F900EC746A /* Main.storyboard */,
+				3873F53D1F193A3800EC746A /* Data */,
+				3873F53A1F19289C00EC746A /* Frameworks */,
+				3873F4F81F19272A00EC746A /* AppDelegate.swift */,
+				3873F4FA1F19272A00EC746A /* ViewController.swift */,
+				3873F5321F1927D900EC746A /* EmotionRecognition.swift */,
+				3873F5341F1927DF00EC746A /* Stack.swift */,
+				3873F5361F1927E600EC746A /* FrameExtractor.swift */,
+				3873F5381F1927EC00EC746A /* Stopwatch.swift */,
+				3873F52D1F19277300EC746A /* EmotionRecognizer */,
+				3873F50A1F19275800EC746A /* Photos */,
+				3873F4FF1F19272A00EC746A /* Assets.xcassets */,
+				3873F5011F19272A00EC746A /* LaunchScreen.storyboard */,
+				3873F5041F19272A00EC746A /* Info.plist */,
+			);
+			path = SlideshowDemo;
+			sourceTree = "<group>";
+		};
+		3873F50A1F19275800EC746A /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				3873F50B1F19276100EC746A /* baby.jpg */,
+				3873F50C1F19276100EC746A /* bread.jpg */,
+				3873F50D1F19276100EC746A /* cat.jpg */,
+				3873F50E1F19276100EC746A /* coffee.jpg */,
+				3873F50F1F19276200EC746A /* cupcakes.jpg */,
+				3873F5101F19276200EC746A /* dog.jpg */,
+				3873F5111F19276200EC746A /* flowers.jpg */,
+				3873F5121F19276200EC746A /* frog.jpg */,
+				3873F5131F19276200EC746A /* frogs.jpg */,
+				3873F5141F19276200EC746A /* milk.jpg */,
+				3873F5151F19276200EC746A /* people.jpg */,
+				3873F5161F19276200EC746A /* raspberries.jpg */,
+				3873F5171F19276200EC746A /* spider.jpg */,
+				3873F5181F19276200EC746A /* surfer.jpg */,
+				3873F5191F19276200EC746A /* tree.jpg */,
+				3873F51A1F19276200EC746A /* turtle.jpg */,
+				3873F51B1F19276200EC746A /* waves.jpg */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		3873F52D1F19277300EC746A /* EmotionRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				3873F52F1F19278D00EC746A /* EmotionRecognizer.h */,
+				3873F5301F19278D00EC746A /* EmotionRecognizer.mm */,
+				3873F52E1F19278D00EC746A /* SlideshowDemo-Bridging-Header.h */,
+			);
+			name = EmotionRecognizer;
+			sourceTree = "<group>";
+		};
+		3873F53A1F19289C00EC746A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3873F53B1F19399000EC746A /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3873F53D1F193A3800EC746A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3873F5401F193A4C00EC746A /* haarcascade_frontalface_default.xml */,
+				3873F53E1F193A4500EC746A /* fishface_ckplus.xml */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3873F4F41F19272A00EC746A /* SlideshowDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3873F5071F19272A00EC746A /* Build configuration list for PBXNativeTarget "SlideshowDemo" */;
+			buildPhases = (
+				3873F4F11F19272A00EC746A /* Sources */,
+				3873F4F21F19272A00EC746A /* Frameworks */,
+				3873F4F31F19272A00EC746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideshowDemo;
+			productName = SlideshowDemo;
+			productReference = 3873F4F51F19272A00EC746A /* SlideshowDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3873F4ED1F19272A00EC746A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Berthy Feng";
+				TargetAttributes = {
+					3873F4F41F19272A00EC746A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 86N7ZS7AZP;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3873F4F01F19272A00EC746A /* Build configuration list for PBXProject "SlideshowDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3873F4EC1F19272A00EC746A;
+			productRefGroup = 3873F4F61F19272A00EC746A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3873F4F41F19272A00EC746A /* SlideshowDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3873F4F31F19272A00EC746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3873F5281F19276200EC746A /* spider.jpg in Resources */,
+				3873F5261F19276200EC746A /* people.jpg in Resources */,
+				3873F52C1F19276200EC746A /* waves.jpg in Resources */,
+				3873F5221F19276200EC746A /* flowers.jpg in Resources */,
+				3873F51F1F19276200EC746A /* coffee.jpg in Resources */,
+				3873F5431F1941F900EC746A /* Main.storyboard in Resources */,
+				3873F51E1F19276200EC746A /* cat.jpg in Resources */,
+				3873F5201F19276200EC746A /* cupcakes.jpg in Resources */,
+				3873F5291F19276200EC746A /* surfer.jpg in Resources */,
+				3873F5031F19272A00EC746A /* LaunchScreen.storyboard in Resources */,
+				3873F5251F19276200EC746A /* milk.jpg in Resources */,
+				3873F5241F19276200EC746A /* frogs.jpg in Resources */,
+				3873F5271F19276200EC746A /* raspberries.jpg in Resources */,
+				3873F53F1F193A4500EC746A /* fishface_ckplus.xml in Resources */,
+				3873F51C1F19276200EC746A /* baby.jpg in Resources */,
+				3873F5411F193A4C00EC746A /* haarcascade_frontalface_default.xml in Resources */,
+				3873F5001F19272A00EC746A /* Assets.xcassets in Resources */,
+				3873F52A1F19276200EC746A /* tree.jpg in Resources */,
+				3873F5231F19276200EC746A /* frog.jpg in Resources */,
+				3873F5211F19276200EC746A /* dog.jpg in Resources */,
+				3873F52B1F19276200EC746A /* turtle.jpg in Resources */,
+				3873F51D1F19276200EC746A /* bread.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3873F4F11F19272A00EC746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3873F5371F1927E600EC746A /* FrameExtractor.swift in Sources */,
+				3873F4FB1F19272A00EC746A /* ViewController.swift in Sources */,
+				3873F5351F1927DF00EC746A /* Stack.swift in Sources */,
+				3873F5311F19278D00EC746A /* EmotionRecognizer.mm in Sources */,
+				3873F4F91F19272A00EC746A /* AppDelegate.swift in Sources */,
+				3873F5391F1927EC00EC746A /* Stopwatch.swift in Sources */,
+				3873F5331F1927D900EC746A /* EmotionRecognition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3873F5011F19272A00EC746A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3873F5021F19272A00EC746A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3873F5051F19272A00EC746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3873F5061F19272A00EC746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3873F5081F19272A00EC746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 86N7ZS7AZP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SlideshowDemo",
+				);
+				INFOPLIST_FILE = SlideshowDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.princeton.bfeng.SlideshowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlideshowDemo/SlideshowDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3873F5091F19272A00EC746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 86N7ZS7AZP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SlideshowDemo",
+				);
+				INFOPLIST_FILE = SlideshowDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.princeton.bfeng.SlideshowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlideshowDemo/SlideshowDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3873F4F01F19272A00EC746A /* Build configuration list for PBXProject "SlideshowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3873F5051F19272A00EC746A /* Debug */,
+				3873F5061F19272A00EC746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3873F5071F19272A00EC746A /* Build configuration list for PBXNativeTarget "SlideshowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3873F5081F19272A00EC746A /* Debug */,
+				3873F5091F19272A00EC746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3873F4ED1F19272A00EC746A /* Project object */;
+}
